@@ -1,0 +1,13 @@
+.input-box {
+  .form-control {    
+    background-color: #f1f1f1;
+		font-size: 16px;
+		font-weight: normal;
+		line-height: normal;
+		border-width: 0;
+		&:focus{
+			box-shadow: none;
+			border-width: 0;
+		}	
+	}
+}

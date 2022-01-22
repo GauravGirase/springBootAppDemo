@@ -1,0 +1,335 @@
+.onboarding-container {
+  @media screen and (max-width: 767px) {
+    padding: 50px 0 0;
+  }
+  .subhead {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+  }
+  .images-block {
+    margin-bottom: 30px;
+  }
+  .signup-link {
+    @media screen and (max-width: 992px) {
+      position: relative;
+      text-align: right;
+    }
+    &.sign-out {
+      color: #ff4848;
+      font-weight: normal;
+      font-size: 14px;
+      a {
+        color: #ff4848;
+        font-weight: normal;
+        font-size: 14px;
+        text-decoration: none;
+      }
+    }
+  }
+  .login-inner {
+    width: 1130px;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  .left-section {
+    width: 557px;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .right-section {
+    width: 515px;
+    padding-top: 70px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      padding: 15px;
+    }
+    .onboarding-logo {
+      width: 80px;
+    }
+    .bar {
+      width: 36px;
+    }
+    .normal-text {
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: -10px;
+      @media screen and (max-width: 992px) {
+        font-size: 29px;
+      }
+    }
+    .big-text {
+      line-height: 123px;
+      white-space: nowrap;
+    }
+  }
+  .images-block {
+    display: flex;
+    align-items: flex-end;
+    .profile-img {
+      width: 105px;
+      height: 105px;
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .file-btn {
+      margin-left: 15px;
+      width: 79px;
+      height: 37px;
+      padding: 9px 10px;
+      border-radius: 2px;
+      border: solid 1px $primary-color;
+      font-size: 16px;
+      color: $label-color;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      input {
+        position: absolute;
+        opacity: 0;
+        width: 300%;
+        height: 100%;
+        top: 0;
+        left: -90px;
+        cursor: pointer;
+      }
+    }
+  }
+  .onboarding-form {
+    width: 440px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      margin: 0;
+    }
+    .row {
+      margin: 0 -5px;
+      .col-sm-6 {
+        padding: 0 5px;
+      }
+    }
+    .form-group {
+      margin-bottom: 20px;
+      .hint-text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        display: block;
+      }
+    }
+    .form-control {
+      height: 59px;
+      margin: 10px 0 0;
+      border: 0;
+      border-radius: 0;
+      font-weight: normal;
+      padding: 20px 20px 20px 20px;
+      background-color: #f1f1f1;
+    }
+    .textarea-height {
+      resize: none;
+      height: 176px;
+    }
+  }
+  .phone-container {
+    .form-control {
+      width: calc(100% - 110px);
+    }
+  }
+  .phone-number-box {
+    margin: 10px 10px 0 0;
+    width: 100px;
+  }
+  .checkbox-section {
+    .custom-checkbox {
+      margin-bottom: 20px;
+    }
+    .custom-check {
+      font-size: 16px;
+      padding-left: 35px;
+      line-height: 25px;
+      .checkmark {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .blue-box {
+    border-radius: 2px;
+    background-color: rgba(20, 97, 109, 0.08);
+    padding: 26px;
+    p {
+      font-size: 15px;
+      color: $primary-color;
+      span {
+        color: #ff4848;
+      }
+    }
+    .bold-text {
+      font-weight: 600;
+    }
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+
+    .step-btn {
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 0.9px;
+      margin-right: 30px;
+      text-transform: uppercase;
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+    .btn-primary {
+      width: 266px;
+      border-radius: 2px;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+  .slider-box {
+    .range-lablel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        color: #2c2c2c;
+      }
+    }
+    .head {
+      font-size: 14px;
+      font-weight: 500;
+      color: #888888;
+      text-transform: uppercase;
+    }
+    .subhead {
+      font-size: 16px;
+      color: $label-color;
+      margin: 15px 0 30px 0;
+      .star {
+        font-size: 14px;
+        line-height: 17px;
+        color: #ff4848;
+      }
+      .number-text {
+        font-size: 16px;
+        color: #14616d;
+        margin-left: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.back-btn {
+  font-size: 15px;
+  font-weight: 500;
+  margin: -43px 0 13px 0;
+  cursor: pointer;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    margin: -56px 0 30px 0;
+  }
+  img {
+    position: relative;
+    top: 0;
+    margin: 0 5px 0 0;
+  }
+}
+
+.searching-container {
+  text-align: center;
+  padding-bottom: 60px;
+  .search-banner {
+    padding-top: 90px;
+    padding-bottom: 52px;
+  }
+  .onboarding-user-name {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: #2c2c2c;
+  }
+  .looking-for-text {
+    font-size: 14px;
+    line-height: normal;
+    color: #2c2c2c;
+    margin-top: 4px;
+  }
+  .searching-title {
+    display: block;
+    font-weight: bold;
+    line-height: normal;
+    color: #2c2c2c;
+    font-size: 28px;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+  .filter-selected-value {
+    justify-content: center;
+    max-width: 350px;
+    margin: 20px auto 10px;
+  }
+  .selected-value-chip {
+    margin: 0 5px 8px 0 !important;
+    padding: 7px 15px 8px 15px !important;
+  }
+  .selected-value-chip .chip-data {
+    padding-right: 0 !important;
+  }
+}
+.remove-btn {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+  font-size: 16px;
+  color: #ff4848;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.step-edit-pages {
+  .onboarding-container {
+    @media screen and (min-width: 993px) {
+      height: calc(100% - 135px);
+    }
+    .right-section {
+      @media screen and (min-width: 768px) {
+        padding-top: 55px;
+      }
+      .btn-container {
+        .btn-primary {
+          width: 210px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Login Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- select box -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="home-container">
+      <header class="header-section sticky-top">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"
+            ><img src="images/white-logo.png" alt="white-logo"
+          /></a>
+          <div class="dropdown-outer d-lg-none">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Search Criteria
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center d-lg-none">
+            <a class="notification-icon"
+              ><img
+                src="images/notification-icon.png"
+                alt="notification-icon"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <p>
+                  Add your likes on each property and even you don’t like one
+                  there’s always the next!
+                </p>
+                <div class="dropdown-outer">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Search Criteria
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown"></li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <a class="notification-icon"
+                ><img
+                  src="images/notification-icon.png"
+                  alt="notification-icon"
+              /></a>
+              <button class="btn help-btn mr-2" type="submit">
+                How we work
+              </button>
+              <button class="btn help-btn mr-4" type="submit">
+                <img src="images/icon-help.svg" alt="icon-help" /> Help
+              </button>
+              <div class="account-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                <p class="account-name mb-0">Jane Summers</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="disliked-page featured-page">
+          <a class="back-btn" href="dashboard.html">
+            <img src="images/left-dropdown.svg" alt="left-dropdown" />
+            Back to dashboard
+          </a>
+          <div class="like-disliked-wraaper">
+            <div class="disliked-filters">
+              <h1>
+                <span class="bar-border"></span>
+                <span>FEATURED</span>
+              </h1>
+              <div class="disliked-types-count">
+                <span class="item-type">
+                  <strong>10</strong>
+                  <span class="item-name">Homes</span>
+                </span>
+                <span class="item-type">
+                  <strong>0</strong>
+                  <span class="item-name">Reviewed</span>
+                </span>
+              </div>
+              <!-- disliked-types-count -->
+              <div class="filter-by">
+                <div class="fiter-icon dropdown">
+                  <span
+                    class="dropdownToggle"
+                    id="dropdownForm1"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span
+                      ><img
+                        src="images/filter-icon.png"
+                        alt="Filter Icon"
+                        width="17"
+                        height="17"
+                    /></span>
+                    <span class="text-icon">FILTER</span>
+                  </span>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownForm1">
+                    <form class="onboarding-container">
+                      <div class="checkbox-section">
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >Good Cap Rate (>7%)
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <!-- custom-checkbox -->
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >Cash Flow Positive Homes
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <!-- custom-checkbox -->
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >Seasoned Short Term Rentals
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <!-- custom-checkbox -->
+                      </div>
+                      <div class="filter-action-btns">
+                        <span class="clear-selected">CLEAR</span>
+                        <button type="button" class="btn btn-primary">
+                          APPLY
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- disliked-filters -->
+          </div>
+          <!-- like-disliked-wraaper -->
+
+          <div class="d-flex filter-selected-value">
+            <span class="selected-value-chip">
+              <span class="chip-data">Cash Flow Positive Homes</span>
+              <span class="chip-close"
+                ><img
+                  src="images/modal-close.svg"
+                  alt="Close icon"
+                  width="6"
+                  height="6"
+              /></span>
+            </span>
+            <span class="selected-value-chip">
+              <span class="chip-data">Good Cap Rate (>7%)</span>
+              <span class="chip-close"
+                ><img
+                  src="images/modal-close.svg"
+                  alt="Close icon"
+                  width="6"
+                  height="6"
+              /></span>
+            </span>
+          </div>
+
+          <div class="disliked-items-card">
+            <div class="item-card liked-empty-state">
+              <div class="card-media">
+                <img
+                  src="images/1.jpg"
+                  alt="Disliked Card Image"
+                />
+              </div>
+              <div class="card-liked-status">
+                <span
+                  ><img
+                    src="images/thumb-up-empty.svg"
+                    alt="Thumb Icon"
+                    class="thumb-down"
+                    width="20"
+                    height="18"
+                /></span>
+                <span
+                  ><img
+                    src="images/thumb-up-empty.svg"
+                    alt="Thumb Icon"
+                    class="thumb-up"
+                    width="20"
+                    height="18"
+                /></span>
+              </div>
+              <div class="card-content">
+                <strong class="title">504 Sidzon Mill</strong>
+                <span class="amount">$139,900</span>
+              </div>
+
+              <div class="card-detail-view-hover">
+                <span>Rêvedy ID: <span class="data">3215</span></span>
+                <strong class="address-located"
+                  >1141 Ruwbeb Street, GA, 49587</strong
+                >
+                <span>Listing Price: <span class="data">$139,900</span></span>
+                <span>Cap Rate: <span class="data">12.47%</span></span>
+                <span>Cash Flow <span class="data">$10,101</span></span>
+                <span>Cash on Cash: <span class="data">39.19%</span></span>
+                <span>Projected Rent: <span class="data">$30,000</span></span>
+              </div>
+              <!-- card-detail-view-hover -->
+            </div>
+            <!-- item-card | Loop this div for repeting card   -->
+
+            <div class="item-card">
+              <div class="card-media">
+                <img src="images/1.jpg" alt="Disliked Card Image" />
+              </div>
+              <div class="card-liked-status">
+                <span
+                  ><img
+                    src="images/thumb-down-fill.svg"
+                    alt="Thumb Icon"
+                    class="thumb-down"
+                    width="20"
+                    height="18"
+                /></span>
+                <span
+                  ><img
+                    src="images/thumb-up-empty.svg"
+                    alt="Thumb Icon"
+                    class="thumb-up"
+                    width="20"
+                    height="18"
+                /></span>
+              </div>
+
+              <div class="card-content">
+                <strong class="title">504 Sidzon Mill</strong>
+                <span class="amount">$139,900</span>
+              </div>
+            </div>
+            <!-- item-card | Loop this div for repeting card   -->
+
+            <!-- This card for Liked page -->
+
+            <div class="item-card item-card-liked">
+              <div class="card-media">
+                <img src="images/5.jpg" alt="Disliked Card Image" />
+              </div>
+              <div class="card-liked-status">
+                <span
+                  ><img
+                    src="images/thumb-up-empty.svg"
+                    alt="Thumb Icon"
+                    class="thumb-up"
+                    width="20"
+                    height="18"
+                /></span>
+                <span
+                  ><img
+                    src="images/thumb-down-fill.svg"
+                    alt="Thumb Icon"
+                    class="thumb-down"
+                    width="20"
+                    height="18"
+                /></span>
+              </div>
+
+              <div class="card-content">
+                <strong class="title">504 Sidzon Mill</strong>
+                <span class="amount">$139,900</span>
+              </div>
+            </div>
+            <!-- item-card | Loop this div for repeting card   -->
+            <!-- This card for Liked page End-->
+          </div>
+          <!-- disliked-items-card -->
+        </div>
+        <!-- disliked-page -->
+      </div>
+      <footer class="footer-section">
+        <div class="footer-inner">
+          <div class="left-link">
+            <a>How We Work</a>
+            <span class="dot"></span>
+            <a>Contact Us</a>
+            <span class="dot"></span>
+            <a>Feedback</a>
+          </div>
+          <div class="copyright-text">&#169; Copyright. All Rights Reserved</div>
+        </div>
+      </footer>
+  
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- select box -->
+    <script src="js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,473 @@
+.login-container {
+  height: calc(100% - 60px);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  @media screen and (max-width: 992px) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+  }
+  .signup-link {
+    position: absolute;
+    font-size: 13px;
+    max-width: 1175px;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    text-align: right;
+    color: $primary-color;
+    z-index: 1;
+    right: -50px;
+    top: 50px;
+    padding-right: 16px;
+    @media screen and (min-width: 981px) {
+      right: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      right: 0;
+    }
+    @media screen and (min-width: 1240px) {
+      right: -5%;
+    }
+    @media screen and (min-width: 1280px) {
+      right: -8%;
+    }
+
+    a {
+      cursor: pointer;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .mobile-signup-link {
+    position: relative;
+    right: 0;
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+  }
+  .login-inner {
+    display: flex;
+    height: 100%;
+    width: 1175px;
+    margin: 0 auto;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  .left-section {
+    width: 776px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    @media screen and (max-width: 992px) {
+      width: 472px;
+      height: 462px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 272px;
+      height: 262px;
+    }
+    @media screen and (min-width: 993px) and (max-width: 1200px) {
+      width: 50%;
+    }
+    .background-img {
+      width: 100%;
+      // height: 100%;
+      object-fit: cover;
+    }
+    .logo-img {
+      position: absolute;
+      top: 50px;
+      right: 40px;
+      @media screen and (max-width: 992px) {
+        top: 42px;
+        right: 27px;
+        width: 143px;
+        height: 69px;
+      }
+    }
+  }
+  .right-section {
+    margin-left: 50px;
+    width: 349px;
+    height: 100%;
+    overflow: auto;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      margin: 0;
+      overflow: initial;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0 !important;
+    }
+  }
+  h1 {
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 70px;
+    color: $primary-color;
+    padding-right: 40px;
+    margin-bottom: 25px;
+    margin-top: 56px;
+    @media screen and (max-width: 992px) {
+      padding-right: 0;
+      margin-top: 24px;
+      font-size: 40px;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+  }
+  .normal-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: $primary-color;
+  }
+  .login-form {
+    margin-top: 60px;
+    @media screen and (max-width: 992px) {
+      margin-top: 30px;
+    }
+    .form-control {
+      border: 0;
+      padding: 0;
+    }
+    .seprate-bar {
+      width: 100%;
+      height: 1px;
+      background: #e6e6e6;
+      margin: 15px 0;
+      &.error {
+        background: $error-color;
+      }
+    }
+    .icon-password-hint {
+      position: absolute;
+      top: 17px;
+      right: 2px;
+      font-size: 24px;
+      color: #2c2c2c !important;
+    }
+    .icon-right-arrow {
+      font-size: 13px;
+    }
+    .btn-primary {
+      margin-top: 40px;
+    }
+    .custom-check {
+      font-size: 14px;
+      line-height: 14px;
+      a {
+        text-decoration: underline;
+      }
+      .checkmark {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .error-container {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    color: $error-color;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    display: none;
+  }
+  .error {
+    color: $error-color;
+  }
+  .password-hint {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    color: #888888;
+    margin-left: 5px;
+  }
+  .hide-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #14616d;
+    position: absolute;
+    right: 0;
+    top: 21px;
+    a,
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Forget Password Modal Start
+.modal-login {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    border-radius: 0;
+    border-width: 0;
+  }
+  .modal-body {
+    padding: 26px 20px 40px 20px;
+    @media screen and (min-width: 768px) {
+      padding: 26px 35px 40px 35px;
+    }
+  }
+  .close {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    opacity: 1;
+    z-index: 2;
+  }
+  h4 {
+    max-width: 440px;
+    margin-bottom: 17px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+    color: #2c2c2c;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+    + p {
+      max-width: 528px;
+      margin: 17px 0 28px 0;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: normal;
+      color: #050505;
+    }
+  }
+  .form-group {
+    &.modal-form-group {
+      .form-control {
+        height: 59px;
+        margin: 0;
+        border: 1px solid transparent;
+        border-radius: 0;
+        font-weight: normal;
+        padding: 20px 20px 20px 20px;
+        background-color: #f1f1f1;
+        font-size: 16px;
+        color: #000;
+      }
+      label {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: normal;
+        color: #050505;
+      }
+    }
+  }
+  .modal-action-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+      margin-top: 46px;
+    }
+    .btn-primary {
+      height: 66px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 15px;
+      @media screen and (min-width: 768px) {
+        max-width: 210px;
+      }
+    }
+  }
+}
+// Forget Password Modal End
+.error {
+  label {
+    color: $error-color;
+  }
+}
+
+.password-reset-success {
+  .right-section {
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+    max-width: 350px;
+  }
+  .logo-img {
+    margin-bottom: 90px;
+  }
+  .success-msg {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #2c2c2c;
+    margin: 22px 0 35px;
+    display: block;
+  }
+  &.page-404 {
+    height: 100%;
+    .login-inner {
+      height: 100%;
+    }
+    .right-section {
+      margin: auto;
+      text-align: center;
+      max-width: 270px;
+      padding: 70px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 40px;
+        line-height: normal;
+        padding-right: 0;
+        margin-bottom: 8px;
+        margin-top: 24px;
+        text-align: center;
+      }
+      .success-msg {
+        margin: 0 0 36px;
+      }
+    }
+  }
+}
+.reset-password {
+  padding-top: 0 !important;
+  .logo-img {
+    margin-bottom: 100px;
+    margin-top: 70px;
+  }
+  .right-section {
+    margin: auto;
+    text-align: center;
+    max-width: 440px;
+    width: 100%;
+  }
+  .onboarding-form {
+    width: 100% !important;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 42px !important;
+  }
+  .form-group label span {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    color: #888888;
+  }
+  .btn-container {
+    margin-top: 30px !important;
+    .btn-primary {
+      width: 210px !important;
+      height: 66px;
+      @media screen and (max-width: 992px) {
+        width: 100% !important;
+      }
+    }
+  }
+}
+.password-show-wrapper {
+  position: relative;
+  .form-control {
+    padding-right: 70px !important;
+  }
+  .show-password-position {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding-right: 20px;
+  }
+  .show-passwored {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: #14616d;
+    cursor: pointer;
+  }
+}
+.checkbox-terms-text {
+  margin-left: 24px;
+  display: inline-block;
+  margin-top: 1px;
+  position: relative;
+  vertical-align: top;
+  line-height: 14px;
+  font-size: 14px;
+  color: #2c2c2c;
+  a {
+    text-decoration: underline !important;
+  }
+}
+
+.modal-static-page {
+  .modal-dialog {    
+    @media screen and (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media screen and (min-width: 981px) {
+      max-width: 920px;
+    }
+  }
+  .modal-content {
+    border-radius: 0;
+    border-width: 0;
+  }
+  .modal-body {
+    padding: 32px 15px 32px;
+    @media screen and (min-width: 768px) {
+      padding: 40px 45px 40px;
+    }
+  }
+  .close {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    opacity: 1;
+    z-index: 2;
+  }
+  h5 {
+    margin-bottom: 14px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+    color: #2c2c2c;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+  strong.d-block {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #050505;
+  }
+  p {
+    margin: 18px 0 0;
+    font-size: 15px;
+    line-height: normal;
+    color: #2c2c2c;
+  }
+}

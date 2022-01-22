@@ -1,0 +1,176 @@
+@import "var";
+
+html,
+body {
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  word-break: break-word;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+button:focus {
+  outline: 0 none !important;
+}
+
+body {
+  font-family: "Barlow", sans-serif !important;
+  color: $primary-color;
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  line-height: normal;
+  background: #fff;
+}
+.big-text {
+  font-size: 135px;
+  font-weight: bold;
+  color: #f4f4f4;
+  @media screen and (max-width: 992px) {
+    font-size: 80px;
+    margin: 0;
+  }
+  @media screen and (min-width: 993px) and (max-width: 1199px) {
+    font-size: 100px;
+  }
+}
+
+.ng5-slider {
+  margin-top: 10px !important;
+}
+.ng5-slider.animate .ng5-slider-bubble.ng5-slider-limit {
+  display: none;
+}
+.alert-custom {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  max-width: 320px;
+  height: 55px;
+  padding: 18px 17px;
+  border-radius: 2px;
+  margin: 0 auto;
+  // transform: translate3d(0%, -200%, 0) !important;
+  transition: all 400ms ease 0s !important;
+  bottom: -100%;
+  display: flex;
+  &.show {
+    bottom: 65px;
+  }
+  .alert-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #2c2c2c;
+  }
+}
+.alert-danger {
+  border: solid 1px #ff4848;
+  background-color: #fff4f4;
+}
+.alert-success {
+  border: solid 1px #47ab49;
+  background-color: #dbefdb;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+%all-animation {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.red {
+  color: #ff4848;
+}
+
+// Loader
+.loading-container {
+  position: fixed;
+  z-index: 1099;  
+  left: 0;
+  width: 100%;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  height: calc(100% - 80px);
+  top: 80px;
+  &.full-page{
+    height: calc(100% - 0px);
+    top: 0;  
+  }  
+  .loading {
+    height: 0;
+    width: 0;
+    padding: 15px;
+    border: 4px solid #14616d;
+    border-right-color: #fff;
+    border-radius: 22px;
+    -webkit-animation: rotate 1s infinite linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  @-webkit-keyframes rotate {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+}
+// Loader End
+input:-webkit-autofill {
+	box-shadow: 0 0 0 30px transparent inset !important;
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+select::-ms-expand {
+  display: none;
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+input,
+select,
+textarea {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Login Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- select box -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="home-container">
+            <!-- Please use updated header code from dashboard.html and place here with condition base where the center content of the header will hide. -->
+      <header class="header-section sticky-top">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"
+            ><img src="images/white-logo.png" alt="white-logo"
+          /></a>
+          <div class="dropdown-outer d-lg-none">
+            <a
+              class="nav-link dropdown-toggle cursor-pointer"
+              data-toggle="modal"
+              data-target="#searchCriteria"
+              data-backdrop="static"
+              data-keyboard="false"
+            >
+              Search Criteria
+            </a>
+          </div>
+          <div class="d-flex align-items-center d-lg-none">
+            <div class="custom-dropdown notification-custom-dropdown dropdown">
+              <a
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="notification-icon cursor-pointer"
+                id="dropdownForm1"
+                ><img
+                  src="images/notification-icon.png"
+                  alt="notification-icon"
+                />
+              </a>
+
+              <!-- notification Dropdown -->
+
+              <div class="dropdown-menu" aria-labelledby="dropdownForm1">
+                <ul class="list-unstyled">
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Uh-Oh! This home is not available anymore.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <span class="indicate-sold"></span>
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >174 Wibe Boulevard, Ohio, GA 43064</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-sold">Sold</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Uh-Oh! This home is not available anymore.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >174 Wibe Boulevard, Ohio, GA 43064</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-sold">Sold</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Another offer has been accepted.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >688 Nokih Extension</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-pending">Pending</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Good news! A pending home is available again.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >688 Nokih Extension</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-available">Available</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          src="images/search-icon.svg"
+                          alt="Search Icon"
+                          width="20"
+                          height="20"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="find-a-match">
+                          Hi, You might just find a match as we have added more
+                          homes for you to review.
+                        </span>
+                        <span class="never-run-out">
+                          <span>We never run out of homes </span>
+                          <span>
+                            <img
+                              src="images/emoji.png"
+                              alt="Emoji Icon"
+                              width="20"
+                              height="20"
+                          /></span>
+                        </span>
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-available">Available</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          src="images/added-to-home.svg"
+                          alt="Search Icon"
+                          width="21"
+                          height="28"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="find-a-match pl-1">
+                          We have added some featured homes.
+                        </span>
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-available">Available</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                </ul>
+              </div>
+              <!-- notification Dropdown End-->
+            </div>
+
+            <button
+              class="navbar-toggler"
+              data-toggle="modal"
+              data-target="#accountProfile"
+              data-backdrop="static"
+              data-keyboard="false"
+              type="button"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item search-criteria-wrapper">
+                <p>
+                  Add your likes on each property and even you don’t like one
+                  there’s always the next!
+                </p>
+                <div class="dropdown-outer">
+                  <a
+                    class="nav-link dropdown-toggle cursor-pointer"
+                    data-toggle="modal"
+                    data-target="#searchCriteria"
+                    data-backdrop="static"
+                    data-keyboard="false"
+                  >
+                    Search Criteria
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <div
+                class="custom-dropdown notification-custom-dropdown dropdown"
+              >
+                <a
+                  class="notification-icon cursor-pointer"
+                  type="button"
+                  id="dropdownForm1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><img
+                    src="images/notification-icon.png"
+                    alt="notification-icon"
+                /></a>
+                <!-- notification Dropdown -->
+
+                <div class="dropdown-menu" aria-labelledby="dropdownForm1">
+                  <ul class="list-unstyled">
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Uh-Oh! This home is not available anymore.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <span class="indicate-sold"></span>
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >174 Wibe Boulevard, Ohio, GA 43064</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-sold">Sold</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Uh-Oh! This home is not available anymore.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >174 Wibe Boulevard, Ohio, GA 43064</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-sold">Sold</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Another offer has been accepted.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >688 Nokih Extension</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-pending">Pending</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Good news! A pending home is available again.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >688 Nokih Extension</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-available">Available</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            src="images/search-icon.svg"
+                            alt="Search Icon"
+                            width="20"
+                            height="20"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="find-a-match">
+                            Hi, You might just find a match as we have added
+                            more homes for you to review.
+                          </span>
+                          <span class="never-run-out">
+                            <span>We never run out of homes </span>
+                            <span>
+                              <img
+                                src="images/emoji.png"
+                                alt="Emoji Icon"
+                                width="20"
+                                height="20"
+                            /></span>
+                          </span>
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-available">Available</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            src="images/added-to-home.svg"
+                            alt="Search Icon"
+                            width="21"
+                            height="28"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="find-a-match pl-1">
+                            We have added some featured homes.
+                          </span>
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-available">Available</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                  </ul>
+                </div>
+                <!-- notification Dropdown End-->
+              </div>
+              <button class="btn help-btn mr-2" type="submit">
+                How we work
+              </button>
+              <button class="btn help-btn mr-4" type="submit">
+                <img src="images/icon-help.svg" alt="icon-help" /> Help
+              </button>
+              <div
+                class="account-dropdown cursor-pointer"
+                data-toggle="modal"
+                data-target="#accountProfile"
+                data-backdrop="static"
+                data-keyboard="false"
+              >
+                <a class="nav-link dropdown-toggle">
+                  Account
+                </a>
+                <p class="account-name mb-0">Jane Summers</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+            <!-- Please use updated header code from dashboard.html and place here with condition base where the center content of the header will hide. -->
+
+      <!-- Edit Step's Page | Profile -->
+      <div class="step-edit-pages">
+        <div class="login-container onboarding-container">
+          <div class="login-inner">
+            <div class="left-section">
+              <img
+                class="background-img h-auto"
+                src="images/onboarding-img.png"
+                alt="test"
+              />
+            </div>
+            <!-- first step-->
+            <div class="right-section">
+              <div class="normal-text d-flex align-items-center">
+                <span class="bar mr-2"></span>
+                My Profile
+              </div>
+              <form class="onboarding-form">
+                <div class="subhead">personal info</div>
+                <div class="images-block">
+                  <div class="profile-img">
+                    <img src="images/default-img.svg" alt="default-img" />
+                  </div>
+                  <div class="file-btn">
+                    Upload
+                    <input type="file" />
+                  </div>
+                  <span class="remove-btn" role="Remove Image">Remove</span>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>First Name*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Last Name*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="text" class="form-control" placeholder="sudheer@gmail.com" disabled />
+                </div>
+    
+                <div class="phone-container1">
+                  <div class="form-group error">
+                    <label>Phone</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Type here"
+                    />
+                    <div class="error-container input-field-error">
+                      <span class="icon-information mr-1"></span><span>Mandatory</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>How soon are you looking to purchase a home?</label>
+                  <div class="cusotm-select mt-2 w-100">
+                    <select class="select-single" id="step-03">
+                      <option>Select</option>
+                      <option>Just thinking about buying</option>
+                      <option>I want to make offer within 48 hours</option>
+                      <option>Within 3 months</option>
+                      <option>Within 6 months</option>
+                      <option>Within 12 months</option>
+                      <option>Greater than 12 months</option>
+                      <option>Not looking to buy</option>
+                      <option>Other</option>                  
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label
+                    >What is your primary purpose for buying a vacation home?</label
+                  >
+                  <div class="cusotm-select mt-2 w-100">
+                    <select class="select-single" id="step-04">
+                      <option>Select</option>
+                      <option>As an investment only</option>
+                      <option>As an investment and to enjoy</option>
+                      <option>As a vacation home only</option>
+                      <option>To eventually retire in the home</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>What assistance are you looking for?</label>
+                  <span class="hint-text">(Select all that apply)</span>
+                </div>
+    
+                <div class="checkbox-section">
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Not interested in buying now
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >I already have a Real Estate Agent
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Need a Real Estate Agent
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Searching for best area to buy
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Searching for best home(s) in identified area(s)
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Home is identified, need assistance with buying home
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Advice on financing short term rentals
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Assistance with Property Manager/Vacation Rental Manager
+                      identification
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <label class="custom-check"
+                      >Help determining the right Insurance
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>How did you hear about us?</label>
+                  <div class="cusotm-select mt-2 w-100">
+                    <select class="select-single" id="step-05">
+                      <option>Select</option>
+                      <option>AirDNA</option></option>
+                      <option>Vacasa</option>
+                      <option>Real Estate agent</option>
+                      <option>New Outlet</option>
+                      <option>Internal Search</option>
+                      <option>Clicked on Ad</option>                  
+                    </select>
+                  </div>
+                </div>
+                <div class="blue-box">
+                  <p class="bold-text">
+                    Please help keep us in business by following the below
+                    guidelines whenever possible.
+                  </p>
+                  <p class="bold-text mb-0">
+                    <span>*</span> Real Estate Agent Referral:
+                  </p>
+                  <p>
+                    Utilize a preferred Rêvedy agent to help you purchase the home.
+                  </p>
+                  <p class="bold-text mb-0">
+                    <span>*</span> Vacation Rental Management Referral:
+                  </p>
+                  <p>
+                    If you decide to utilize a Vacation Rental Manager, allow Rêvedy
+                    to make the introduction and endorse Rêvedy as the referring
+                    party to the selected Vacation Rental Management company.
+                  </p>
+                </div>
+                <div class="btn-container">
+                  <div class="step-btn"><span class="bar mr-2"></span> profile details</div>
+                  <!-- <button type="button" class="btn btn-primary text-uppercase">
+                    save & proceed to next step
+                  </button> -->
+                  <a
+                    type="button"
+                    class="btn btn-primary text-uppercase"
+                    href="onboarding-step-2.html"
+                  >
+                  Save edits
+                  </a>
+                </div>
+              </form>
+            </div>
+            <!-- first step end-->
+          </div>
+        </div>                
+      </div>
+      <!-- Edit Step's Page | Profile End -->
+
+      <footer class="footer-section">
+        <div class="footer-inner">
+          <div class="left-link">
+            <a>How We Work</a>
+            <span class="dot"></span>
+            <a>Contact Us</a>
+            <span class="dot"></span>
+            <a>Feedback</a>
+          </div>
+          <div class="copyright-text">
+            &#169; Copyright. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- select box -->
+    <script src="js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".slider-nav",
+      });
+      $(".slider-nav").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: ".slider-for",
+        dots: false,
+        focusOnSelect: true,
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      $(".placeholder-multiple").select2({
+        placeholder: "Select",
+      });
+    </script>
+  </body>
+</html>

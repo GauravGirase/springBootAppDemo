@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Login Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- select box -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="login-container">
+      <div class="signup-link">
+        Don’t have an account? <a href="signup.html">Sign up</a>
+      </div>
+      <div class="login-inner">
+        <div class="left-section">
+          <img class="background-img" src="images/login-BG.png" alt="test" />
+          <img class="logo-img" src="images/logo.png" alt="logo" />
+        </div>
+        <div class="right-section">
+          <h1>We make your dream a smart decision.</h1>
+          <div class="normal-text d-flex text-uppercase align-items-center">
+            <span class="bar mr-2"></span>
+            Find the best vacation rental homes
+          </div>
+          <form class="login-form">
+            <div class="error-container">
+              <span class="icon-information mr-2"></span> Invalid email address.
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="text" class="form-control" placeholder="Type here" />
+            </div>
+            <div class="seprate-bar"></div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="text" class="form-control" placeholder="Type here" />
+              <span
+                class="icon-password-hint cursor-pointer"
+                data-toggle="modal"
+                data-target="#forgotPassword"
+                data-backdrop="static"
+                data-keyboard="false"
+              ></span>
+            </div>
+            <!-- <button type="button" class="btn btn-primary w-100 text-uppercase">
+              Sign in <span class="ml-2 icon-right-arrow"></span>
+            </button> -->
+            <a type="button" class="btn btn-primary w-100 text-uppercase" href="dashboard.html">
+              Sign in <span class="ml-2 icon-right-arrow"></span>
+            </a>
+
+            <div class="signup-link mobile-signup-link">
+              Don’t have an account? <a href="signup.html">Sign up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-section">
+      <div class="footer-inner">
+        <div class="left-link">
+          <a>How We Work</a>
+          <span class="dot"></span>
+          <a>Contact Us</a>
+          <span class="dot"></span>
+          <a>Feedback</a>
+        </div>
+        <div class="copyright-text">&#169; Copyright. All Rights Reserved</div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade modal-login"
+      id="forgotPassword"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">
+              <img
+                class="logo-img"
+                src="images/modal-close.svg"
+                alt="Modal Close icon"
+                width="10"
+                height="10"
+              />
+            </span>
+          </button>
+          <div class="modal-body">
+            <h4 class="modal-title">Don’t remember your password?</h4>
+            <p>
+              We will help you out. Just enter the registered email address
+              where we can send you the link to reset your password.
+            </p>
+            <div class="form-group modal-form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="text" class="form-control" placeholder="Type here" />
+            </div>
+            <div class="modal-action-btn-wrapper">
+              <!-- <button type="button" class="btn btn-primary text-uppercase">
+                send link
+              </button> -->
+              <a type="button" class="btn btn-primary text-uppercase" href="email-reset-password.html">
+                send link
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- select box -->
+    <script src="js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

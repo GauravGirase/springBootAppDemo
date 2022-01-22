@@ -1,0 +1,2889 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Login Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- select box -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="home-container dashboard-padding-bootom">
+      <div class="loading-container d-none" role="Loading">
+        <div class="loading"></div>
+      </div>
+      <header class="header-section sticky-top">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"
+            ><img src="images/white-logo.png" alt="white-logo"
+          /></a>
+          <div class="dropdown-outer d-lg-none">
+            <a
+              class="nav-link dropdown-toggle cursor-pointer"
+              data-toggle="modal"
+              data-target="#searchCriteria"
+              data-backdrop="static"
+              data-keyboard="false"
+            >
+              Search Criteria
+            </a>
+          </div>
+          <div class="d-flex align-items-center d-lg-none">
+            <div class="custom-dropdown notification-custom-dropdown dropdown">
+              <a
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="notification-icon cursor-pointer"
+                id="dropdownForm1"
+                ><img
+                  src="images/notification-icon.png"
+                  alt="notification-icon"
+                />
+              </a>
+
+              <!-- notification Dropdown -->
+
+              <div class="dropdown-menu" aria-labelledby="dropdownForm1">
+                <ul class="list-unstyled">
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Uh-Oh! This home is not available anymore.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <span class="indicate-sold"></span>
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >174 Wibe Boulevard, Ohio, GA 43064</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-sold">Sold</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Uh-Oh! This home is not available anymore.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >174 Wibe Boulevard, Ohio, GA 43064</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-sold">Sold</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Another offer has been accepted.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >688 Nokih Extension</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-pending">Pending</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <strong class="d-block"
+                      >Good news! A pending home is available again.</strong
+                    >
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          class="notification-media-image"
+                          src="images/test.jpg"
+                          alt="Property Thumbnail"
+                          width="45"
+                          height="45"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="property-id">Rêvedy ID: 3215</span>
+                        <span class="property-location"
+                          >688 Nokih Extension</span
+                        >
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-available">Available</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          src="images/search-icon.svg"
+                          alt="Search Icon"
+                          width="20"
+                          height="20"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="find-a-match">
+                          Hi, You might just find a match as we have added more
+                          homes for you to review.
+                        </span>
+                        <span class="never-run-out">
+                          <span>We never run out of homes </span>
+                          <span>
+                            <img
+                              src="images/emoji.png"
+                              alt="Emoji Icon"
+                              width="20"
+                              height="20"
+                          /></span>
+                        </span>
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-available">Available</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                  <li class="list-item">
+                    <div class="notification-wraaper">
+                      <div class="notification-media">
+                        <img
+                          src="images/added-to-home.svg"
+                          alt="Search Icon"
+                          width="21"
+                          height="28"
+                        />
+                      </div>
+                      <div class="notification-content">
+                        <span class="find-a-match pl-1">
+                          We have added some featured homes.
+                        </span>
+                      </div>
+                      <div class="notification-action m-auto">
+                        <span class="status-available">Available</span>
+                      </div>
+                    </div>
+                    <!-- notification-wraaper -->
+                  </li>
+                  <!-- list-item -->
+                </ul>
+              </div>
+              <!-- notification Dropdown End-->
+            </div>
+
+            <button
+              class="navbar-toggler"
+              data-toggle="modal"
+              data-target="#accountProfile"
+              data-backdrop="static"
+              data-keyboard="false"
+              type="button"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item search-criteria-wrapper">
+                <p>
+                  Add your likes on each property and even you don’t like one
+                  there’s always the next!
+                </p>
+                <div class="dropdown-outer">
+                  <a
+                    class="nav-link dropdown-toggle cursor-pointer"
+                    data-toggle="modal"
+                    data-target="#searchCriteria"
+                    data-backdrop="static"
+                    data-keyboard="false"
+                  >
+                    Search Criteria
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <div
+                class="custom-dropdown notification-custom-dropdown dropdown"
+              >
+                <a
+                  class="notification-icon cursor-pointer"
+                  type="button"
+                  id="dropdownForm1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><img
+                    src="images/notification-icon.png"
+                    alt="notification-icon"
+                /></a>
+                <!-- notification Dropdown -->
+
+                <div class="dropdown-menu" aria-labelledby="dropdownForm1">
+                  <ul class="list-unstyled">
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Uh-Oh! This home is not available anymore.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <span class="indicate-sold"></span>
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >174 Wibe Boulevard, Ohio, GA 43064</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-sold">Sold</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Uh-Oh! This home is not available anymore.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >174 Wibe Boulevard, Ohio, GA 43064</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-sold">Sold</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Another offer has been accepted.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >688 Nokih Extension</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-pending">Pending</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <strong class="d-block"
+                        >Good news! A pending home is available again.</strong
+                      >
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            class="notification-media-image"
+                            src="images/test.jpg"
+                            alt="Property Thumbnail"
+                            width="45"
+                            height="45"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="property-id">Rêvedy ID: 3215</span>
+                          <span class="property-location"
+                            >688 Nokih Extension</span
+                          >
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-available">Available</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            src="images/search-icon.svg"
+                            alt="Search Icon"
+                            width="20"
+                            height="20"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="find-a-match">
+                            Hi, You might just find a match as we have added
+                            more homes for you to review.
+                          </span>
+                          <span class="never-run-out">
+                            <span>We never run out of homes </span>
+                            <span>
+                              <img
+                                src="images/emoji.png"
+                                alt="Emoji Icon"
+                                width="20"
+                                height="20"
+                            /></span>
+                          </span>
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-available">Available</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                    <li class="list-item">
+                      <div class="notification-wraaper">
+                        <div class="notification-media">
+                          <img
+                            src="images/added-to-home.svg"
+                            alt="Search Icon"
+                            width="21"
+                            height="28"
+                          />
+                        </div>
+                        <div class="notification-content">
+                          <span class="find-a-match pl-1">
+                            We have added some featured homes.
+                          </span>
+                        </div>
+                        <div class="notification-action m-auto">
+                          <span class="status-available">Available</span>
+                        </div>
+                      </div>
+                      <!-- notification-wraaper -->
+                    </li>
+                    <!-- list-item -->
+                  </ul>
+                </div>
+                <!-- notification Dropdown End-->
+              </div>
+              <button class="btn help-btn mr-2" type="submit">
+                How we work
+              </button>
+              <button class="btn help-btn mr-4" type="submit">
+                <img src="images/icon-help.svg" alt="icon-help" /> Help
+              </button>
+              <div
+                class="account-dropdown cursor-pointer"
+                data-toggle="modal"
+                data-target="#accountProfile"
+                data-backdrop="static"
+                data-keyboard="false"
+              >
+                <a class="nav-link dropdown-toggle">
+                  Account
+                </a>
+                <p class="account-name mb-0">Jane Summers</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Below Code for mobile view only Start-->
+      <div class="dashboard-mobile-view">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="user-section">
+                <div class="number-block">
+                  <div class="img-box">
+                    <img src="images/test.jpg" alt="user" />
+                  </div>
+                </div>
+                <div class="number-block">
+                  <div class="right-box">
+                    <div class="number">05</div>
+                    <div class="small-text">
+                      Liked Homes <span class="icon-right-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="number-block">
+                  <div class="right-box">
+                    <div class="number">10</div>
+                    <div class="small-text">
+                      Disliked Homes <span class="icon-right-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-block-notification">
+                <strong>We have saved 20 homes to your dashboard</strong>
+                <span>5 remaining homes to review</span>
+              </div>
+              <p class="hint-text d-none">
+                Unable to find a home that meets 100% of your search criteria.
+                Showing you homes that match your price range and primary
+                evaluations type.
+              </p>
+              <div class="search-info-container">
+                <div class="property-section">
+                  <span class="background-number">01</span>
+                  <div class="d-flex align-items-end flex-wrap">
+                    <div class="inner-section">
+                      <span class="bar"></span>
+                      <span class="id-text">Rêvedy ID: 3215</span>
+                    </div>
+                    <img
+                      class="logo-img"
+                      src="images/revedy-logo.svg"
+                      alt="revedy-logo"
+                    />
+                  </div>
+                  <div class="address-block">
+                    174 Wibe Boulevard, Ohio, GA 43064
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add-comment-box">
+            <!-- Add a comment Dropdown -->
+            <div class="add-comment-btn custom-dropdown dropdown">
+              <button
+                type="button"
+                class="btn comment-btn"
+                id="dropdownForm1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="images/chat.svg" alt="chat" /> Add a comment
+                <span class="comment-count">1</span>
+              </button>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownForm1">
+                <img
+                  class="close-dropdown"
+                  src="./images/modal-close.svg"
+                  alt="Close Icon"
+                  width="10"
+                  height="10"
+                />
+                <strong
+                  >Let your Revedy Advisor and your Agent know why you like or
+                  dislike the home.</strong
+                >
+                <form class="input-box">
+                  <div class="form-group">
+                    <textarea
+                      name="add-comments"
+                      id="add-comments"
+                      class="form-control"
+                      placeholder="Type here"
+                    ></textarea>
+                  </div>
+                  <div class="input-action-btns">
+                    <button type="button" class="btn btn-primary">
+                      SUBMIT
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Add a comment Dropdown End-->
+            <img class="link-btn" src="images/red-down.png" alt="red-down" />
+            <img class="link-btn" src="images/green-up.png" alt="green-up" />
+          </div>
+
+          <div class="tab-list mobile-tab-list">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >Analysis</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="contact-tab"
+                  data-toggle="tab"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Customise</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="amenities-tab"
+                  data-toggle="tab"
+                  href="#amenities"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Amenities</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="slider-box">
+                    <div class="slider-wrapper">
+                      <div class="slider slider-for">
+                        <div>
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/2.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/3.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/4.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                      </div>
+                      <div class="slider slider-nav">
+                        <div class="thmbnail">
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                        <div class="thmbnail">
+                          <img src="images/2.jpg" alt="Banner Image" />
+                        </div>
+                        <div class="thmbnail">
+                          <img src="images/3.jpg" alt="Banner Image" />
+                        </div>
+                        <div class="thmbnail">
+                          <img src="images/4.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-info-container">
+                    <div class="amenities-section">
+                      <span class="text">1 Bed</span>
+                      <span class="dot"></span>
+                      <span class="text">1 Bath</span>
+                      <span class="dot"></span>
+                      <span class="text">600 sqft</span>
+                      <span class="dot"></span>
+                      <span class="tag"
+                        ><img src="images/letter-icon.svg" alt="letter-icon" />
+                        Existing Rental</span
+                      >
+                    </div>
+                    <p class="italic-small-text">Listing Price:</p>
+                    <p class="amount-box">$139,900</p>
+                    <div class="estimate-container">
+                      <div><span>Estimated Rent:</span> $12,000-$12,500</div>
+                      <div><span>Cash on Cash:</span> 35%</div>
+                    </div>
+                  </div>
+                  <div class="btn-section">
+                    <button
+                      type="button"
+                      class="btn btn-inner-block"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="ADVISOR/AGENT COMMENTS"
+                    >
+                      <img class="mr-3" src="images/headset.svg" alt="" />
+                      Agent
+                    </button>
+                    <button type="button" class="btn-inner-block">
+                      <div class="img-box">
+                        <img src="images/test.jpg" alt="" />
+                      </div>
+                      <div class="right-box">
+                        <div class="head">Miguel Peters</div>
+                        <div class="text text-left">Rêvedy Advisor</div>
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn outline-btn cursor-pointer"
+                      data-toggle="modal"
+                      data-target="#makeOffer"
+                      data-backdrop="static"
+                      data-keyboard="false"
+                    >
+                      Make an Offer
+                    </button>
+                  </div>
+                  <div class="d-flex flex-wrap mt-4">
+                    <div class="grey-box">
+                      <div class="head">
+                        Real estate listing
+                        <img
+                          class="ml-2"
+                          src="images/chain-icon.png"
+                          alt="chain-icon"
+                        />
+                      </div>
+                      <div class="d-flex flex-wrap">
+                        <div class="block">
+                          <div class="head">Listing Status</div>
+                          <div class="text">Listed on MLS</div>
+                        </div>
+                        <div class="block">
+                          <div class="head">Days on Market</div>
+                          <div class="text">228</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="estimate-box">
+                      <div class="item-row">
+                        <span class="head">Pool</span>
+                        <span class="value"
+                          ><img src="images/green-check.svg" alt="green-check"
+                        /></span>
+                      </div>
+                      <div class="item-row">
+                        <span class="head">Hottub</span>
+                        <span class="value"
+                          ><img src="images/red-cross.svg" alt="red-cross"
+                        /></span>
+                      </div>
+                      <div class="item-row">
+                        <span class="head">Furniture</span>
+                        <span class="value">Unknown</span>
+                      </div>
+                      <div class="item-row">
+                        <span class="head">View/Waterfront</span>
+                        <span class="value"
+                          ><img src="images/green-check.svg" alt="alt-green"
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="comment-block">
+                <span class="comment-vertical-line"></span>
+                <div class="comment-content">
+                  <strong>Advisor/Agent comments</strong>
+                  <p>
+                    Wonderful 1960s mid-century home in a stellar location. New
+                    flooring in most areas. Subsantial living room with great
+                    view and has a open with a large pantry. Features a
+                    fireplace and views to the lovely landscape backyard.
+                  </p>
+                </div>
+              </div>
+              <!-- comment-block -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="revenue-block">
+                    <div class="head">
+                      <span class="bar"></span> Rental Analysis
+                    </div>
+                    <div class="amount-range">
+                      $28,500 <span>-</span> $31,500
+                    </div>
+                    <p class="normal-text">Estimated Rent</p>
+                    <div class="d-flex mt-4">
+                      <div class="inner-block">
+                        <div class="head">12.47%</div>
+                        <div class="text">Cap Rate</div>
+                      </div>
+                      <div class="inner-block">
+                        <div class="head">12.47%</div>
+                        <div class="text">Cap Rate</div>
+                      </div>
+                      <div class="inner-block">
+                        <div class="head">12.47%</div>
+                        <div class="text">Cap Rate</div>
+                      </div>
+                    </div>
+                    <div class="speed-metor">
+                      <img src="images/speed-meater.png" alt="speed-meater" />
+                    </div>
+                  </div>
+                  <div class="calculat-head-section">
+                    <div class="expence-list-container">
+                      <div class="heading-section">
+                        <div class="head">Custom Home Calculations</div>
+                        <div class="calc-list">
+                          <span class="active">Custom</span>
+                          <span>Standard</span>
+                        </div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Offer Price:</div>
+                        <div class="text blue-text">$35,000</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Down Payment:</div>
+                        <div class="text blue-text">$7,000</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Amount Financed:</div>
+                        <div class="text blue-text">$7,000</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Monthly Mortgage:</div>
+                        <div class="text blue-text">$53,626</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Upfront Cost:</div>
+                        <div class="text blue-text">$7,000</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Estimated Annual Gross Rent:</div>
+                        <div class="text blue-text">25%</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Annual Mortgage Expense:</div>
+                        <div class="text blue-text">25%</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Annual Rental Expense:</div>
+                        <div class="text blue-text">25%</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Management Fee:</div>
+                        <div class="text blue-text">$70</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Maintenance:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Taxes:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Insurance:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Utilities:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">HOA:</div>
+                        <div class="text blue-text">$1,500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Other:</div>
+                        <div class="text blue-text">$700</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Total Expenses:</div>
+                        <div class="text blue-text">$53,626</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Annual Cash Flow:</div>
+                        <div class="text blue-text">$6,262</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-section">
+                    <button
+                      type="button"
+                      class="btn outline-btn customize-btn w-100"
+                    >
+                      customize home
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="graph-container">
+                    <div class="graph-info-section">
+                      <div class="head">
+                        <span class="bar"></span> Projected Profit
+                      </div>
+                      <div class="normal-text">
+                        Rent - Expenses - Mortgage = Profit
+                      </div>
+                      <p class="small-text">
+                        Mortage calculations: $139,900 listing price, 20% down
+                        ($27,980), $111,920 loan amount, 3% interest rate, 30
+                        year mortgage.
+                      </p>
+                    </div>
+                    <div class="graph-section">
+                      <img src="images/chat-svg.svg" alt="chat-svg" />
+                    </div>
+                  </div>
+                  <p class="note-text">
+                    NOTE: The estimates provided are estimates based on the
+                    performance and expenses of similar vacation rental
+                    properties. Actual figures could differ materially depending
+                    on many factors outside our knowledge or control, such as
+                    property condition, existing and future regulations; current
+                    and future economic, social, and political trends and
+                    conditions; and weather and environmental factors. Expenses
+                    are researched to the best of our ability. Additional
+                    research will be conducted during the buying process.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="calculat-head-section">
+                    <div class="price-container bar-container">
+                      <div class="inner-section">
+                        <div class="btn-section">
+                          <div class="head">customize home</div>
+                          <div class="d-flex">
+                            <button type="button" class="btn reset-btn">
+                              Reset
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                        <div class="big-price">
+                          $315, 000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+                        <div class="big-price mt-2">
+                          $ 63,000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+
+                        <div class="big-price mt-2">
+                          $ 63,000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+
+                        <div class="big-price mt-2">
+                          $ 63,000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+
+                        <div class="management-fee">
+                          <div class="price-subhead">Management Fee</div>
+                          <div class="management-free-content">
+                            <span class="offer">25% </span>
+                            <span class="offer-text">of Estimated Rent</span>
+                          </div>
+                          <span class="offer-bar"></span>
+                        </div>
+                      </div>
+                      <div class="self-check-section">
+                        <label class="custom-radio">
+                          <input type="checkbox" name="profileGMOpt" />
+                          <span class="checkmark"></span>
+                          Self Manage
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="amenities"
+              role="tabpanel"
+              aria-labelledby="amenities-tab"
+            >
+              <div class="row amenities-row">
+                <div class="col-md-8">
+                  <div class="amenities-content">
+                    <strong class="head">Key Features</strong>
+                    <div class="list-unstyled row">
+                      <div class="col-md-6">
+                        <ul class="list-unstyled">
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-bed.png"
+                                alt="Amenities
+                              Bed Icon"
+                                width="29"
+                                height="29"
+                              />
+                            </span>
+                            <span class="amenities-type">Bed</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-bath.svg"
+                                alt="Amenities Bath Icon"
+                                width="21"
+                                height="21"
+                              />
+                            </span>
+                            <span class="amenities-type">Bath</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-sleeps.svg"
+                                alt="Amenities Sleeps Icon"
+                                width="23"
+                                height="23"
+                              />
+                            </span>
+                            <span class="amenities-type">Sleeps</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-furniture.svg"
+                                alt="Amenities Furniture Icon"
+                                width="29"
+                                height="17"
+                              />
+                            </span>
+                            <span class="amenities-type">Furniture</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="list-unstyled">
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-sqft.svg"
+                                alt="Amenities Sq Ft Icon"
+                                width="19"
+                                height="19"
+                              />
+                            </span>
+                            <span class="amenities-type">Sq ft</span>
+                            <span class="available">
+                              <span class="disabled">1200 sq ft</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-apartment.svg"
+                                alt="Amenities Apartment Icon"
+                                width="20"
+                                height="20"
+                              />
+                            </span>
+                            <span class="amenities-type">Home Type</span>
+                            <span class="available">
+                              <span class="disabled">Apartment</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-sort-rentel.svg"
+                                alt="Amenities Term Rental Icon"
+                                width="23"
+                                height="16"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block">Rental</span>
+                            </span>
+                            <span class="available">
+                              <span class="disabled">Seasoned Short Term</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-hoa.png"
+                                alt="Amenities
+                              HOA Icon"
+                                width="26"
+                                height="26"
+                              />
+                            </span>
+                            <span class="amenities-type">HOA</span>
+                            <span class="available">
+                              <span class="disabled">$500</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <strong class="head">HOME AMENITIES</strong>
+                    <div class="list-unstyled row">
+                      <div class="col-md-6">
+                        <ul class="list-unstyled">
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-water.svg"
+                                alt="Amenities Proximity/Drive Icon"
+                                width="25"
+                                height="21"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block">Proximity to Water</span>
+                            </span>
+                            <span class="available">
+                              <span class="disabled">Drive to Water</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-proximity.svg"
+                                alt="Amenities Reserved Proximity Icon"
+                                width="21"
+                                height="26"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block"
+                                >Proximity to Attractions</span
+                              >
+                            </span>
+                            <span class="available">
+                              <span class="text">Great</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-entertainment.svg"
+                                alt="Amenities Reserved Entertainment Icon"
+                                width="22"
+                                height="24"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block">Indoor Entertainment </span>
+                            </span>
+                            <span class="available">
+                              <span class="text-low">Low</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-bed.png"
+                                alt="Amenities
+                              Reserved Outdoor Icon"
+                                width="17"
+                                height="25"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block">Outdoor Entertainment</span>
+                            </span>
+                            <span class="available">
+                              <span class="text">Amazing</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="list-unstyled">
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-parking.svg"
+                                alt="Amenities Reserved Parking Icon"
+                                width="25"
+                                height="25"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block">Reserved Parking</span>
+                            </span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-pool.svg"
+                                alt="Amenities Private Pool Icon"
+                                width="25"
+                                height="21"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block">Private Pool</span>
+                            </span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-ski.svg"
+                                alt="Amenities
+                              Ski-in Ski-out Icon"
+                                width="20"
+                                height="23"
+                              />
+                            </span>
+                            <span class="amenities-type">
+                              <span class="d-block">Ski-in Ski-out</span>
+                            </span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <strong class="head">Shared Amenities</strong>
+                    <div class="list-unstyled row">
+                      <div class="col-md-6">
+                        <ul class="list-unstyled">
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-shared-pool.svg"
+                                alt="Amenities Shared Pool Icon"
+                                width="26"
+                                height="20"
+                              />
+                            </span>
+                            <span class="amenities-type">Shared Pool</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-gated.svg"
+                                alt="Amenities Community Icon"
+                                width="20"
+                                height="18"
+                              />
+                            </span>
+                            <span class="amenities-type">Gated Community </span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-hot-tab.svg"
+                                alt="Amenities Shared Hot Tub Icon"
+                                width="21"
+                                height="21"
+                              />
+                            </span>
+                            <span class="amenities-type">Shared Hot Tub</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="list-unstyled">
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-club-house.svg"
+                                alt="Amenities Clubhouse Icon"
+                                width="21"
+                                height="19"
+                              />
+                            </span>
+                            <span class="amenities-type">Clubhouse</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+
+                          <li class="col-md-12 border--bottom">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-game.svg"
+                                alt="Amenities Game Room Icon"
+                                width="22"
+                                height="15"
+                              />
+                            </span>
+                            <span class="amenities-type">Shared Game Room</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text">Available</span>
+                            </span>
+                          </li>
+                          <li class="col-md-12">
+                            <span class="amenities-icon">
+                              <img
+                                src="images/amenitie-fitness.svg"
+                                alt="Amenities Fitness Center Icon"
+                                width="24"
+                                height="12"
+                              />
+                            </span>
+                            <span class="amenities-type">Fitness Center</span>
+                            <span class="available">
+                              <span>
+                                <img
+                                  src="images/green-small-tick.svg"
+                                  alt="Available Icon"
+                                  width="13"
+                                  height="8"
+                              /></span>
+                              <span class="text-na">N/A</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 amenities-banner">
+                  <img src="images/amenities-banner.svg" alt="user" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container -->
+      </div>
+      <!--  dashboard-mobile-view -->
+
+      <!-- Mobile View only End-->
+
+      <!-- desktop view below -->
+      <div class="dashboard-desktop-view">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="user-section">
+                    <div class="number-block">
+                      <div class="img-box">
+                        <img src="images/test.jpg" alt="user" />
+                      </div>
+                    </div>
+                    <div class="number-block">
+                      <div class="right-box">
+                        <a href="liked-disliked.html">
+                          <div class="number">05</div>
+                          <div class="small-text">
+                            Liked Homes <span class="icon-right-arrow"></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="number-block">
+                      <div class="right-box">
+                        <a href="liked-disliked.html">
+                          <div class="number">10</div>
+                          <div class="small-text">
+                            Disliked Homes
+                            <span class="icon-right-arrow"></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dashboard-block-notification">
+                    <strong>We have saved 20 homes to your dashboard</strong>
+                    <span>5 remaining homes to review</span>
+                  </div>
+                  <p class="hint-text d-none">
+                    Unable to find a home that meets 100% of your search
+                    criteria. Showing you homes that match your price range and
+                    primary evaluations type.
+                  </p>
+                  <div class="search-info-container">
+                    <div class="property-section">
+                      <span class="background-number">01</span>
+                      <div class="d-flex align-items-end flex-wrap">
+                        <div class="inner-section">
+                          <span class="bar"></span>
+                          <span class="id-text">Rêvedy ID: 3215</span>
+                        </div>
+                        <img
+                          class="logo-img"
+                          src="images/revedy-logo.svg"
+                          alt="revedy-logo"
+                        />
+                      </div>
+                      <div class="address-block">
+                        174 Wibe Boulevard, Ohio, GA 43064
+                      </div>
+                    </div>
+                    <div class="amenities-section">
+                      <span class="text">1 Bed</span>
+                      <span class="dot"></span>
+                      <span class="text">1 Bath</span>
+                      <span class="dot"></span>
+                      <span class="text">600 sqft</span>
+                      <span class="dot"></span>
+                      <span class="tag"
+                        ><img src="images/letter-icon.svg" alt="letter-icon" />
+                        Existing Rental</span
+                      >
+                    </div>
+                    <p class="italic-small-text">Listing Price:</p>
+                    <p class="amount-box">$139,900</p>
+                    <div class="estimate-container">
+                      <div><span>Estimated Rent:</span> $12,000-$12,500</div>
+                      <div><span>Cash on Cash:</span> 35%</div>
+                    </div>
+                  </div>
+                  <div class="btn-section">
+                    <button
+                      type="button"
+                      class="btn btn-inner-block"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="ADVISOR/AGENT COMMENTS"
+                    >
+                      <img class="mr-3" src="images/headset.svg" alt="" />
+                      Agent
+                    </button>
+                    <button type="button" class="btn-inner-block">
+                      <div class="img-box">
+                        <img src="images/test.jpg" alt="" />
+                      </div>
+                      <div class="right-box">
+                        <div class="head">Miguel Peters</div>
+                        <div class="text text-left">Rêvedy Advisor</div>
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn outline-btn cursor-pointer"
+                      data-toggle="modal"
+                      data-target="#makeOffer"
+                      data-backdrop="static"
+                      data-keyboard="false"
+                    >
+                      Make an Offer
+                    </button>
+                  </div>
+                  <div class="d-flex flex-wrap mt-4">
+                    <div class="grey-box">
+                      <div class="head">
+                        Real estate listing
+                        <img
+                          class="ml-2"
+                          src="images/chain-icon.png"
+                          alt="chain-icon"
+                        />
+                      </div>
+                      <div class="d-flex flex-wrap">
+                        <div class="block">
+                          <div class="head">Listing Status</div>
+                          <div class="text">Listed on MLS</div>
+                        </div>
+                        <div class="block">
+                          <div class="head">Days on Market</div>
+                          <div class="text">228</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="estimate-box">
+                      <div class="item-row">
+                        <span class="head">Pool</span>
+                        <span class="value"
+                          ><img src="images/green-check.svg" alt="green-check"
+                        /></span>
+                      </div>
+                      <div class="item-row">
+                        <span class="head">Hottub</span>
+                        <span class="value"
+                          ><img src="images/red-cross.svg" alt="red-cross"
+                        /></span>
+                      </div>
+                      <div class="item-row">
+                        <span class="head">Furniture</span>
+                        <span class="value">Unknown</span>
+                      </div>
+                      <div class="item-row">
+                        <span class="head">View/Waterfront</span>
+                        <span class="value"
+                          ><img src="images/green-check.svg" alt="alt-green"
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <span class="show-feature-home">
+                    <a href="featured-home.html">
+                      <span class="feature-text">Show Featured Homes</span>
+                      <span class="icon-right-arrow"></span>
+                    </a>
+                  </span>
+                  <div class="slider-box">
+                    <div class="slider-wrapper">
+                      <div class="slider slider-for">
+                        <div>
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/2.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/3.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/4.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                      </div>
+                      <div class="slider slider-nav">
+                        <div class="thmbnail">
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                        <div class="thmbnail">
+                          <img src="images/2.jpg" alt="Banner Image" />
+                        </div>
+                        <div class="thmbnail">
+                          <img src="images/3.jpg" alt="Banner Image" />
+                        </div>
+                        <div class="thmbnail">
+                          <img src="images/4.jpg" alt="Banner Image" />
+                        </div>
+                        <div>
+                          <img src="images/1.jpg" alt="Banner Image" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-comment-box">
+                      <!-- Add a comment Dropdown -->
+                      <div class="add-comment-btn custom-dropdown dropdown">
+                        <button
+                          type="button"
+                          class="btn comment-btn"
+                          id="dropdownForm1"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img src="images/chat.svg" alt="chat" /> Add a comment
+                          <span class="comment-count">1</span>
+                        </button>
+
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownForm1"
+                        >
+                          <img
+                            class="close-dropdown"
+                            src="./images/modal-close.svg"
+                            alt="Close Icon"
+                            width="10"
+                            height="10"
+                          />
+                          <strong
+                            >Let your Revedy Advisor and your Agent know why you
+                            like or dislike the home.</strong
+                          >
+                          <form class="input-box">
+                            <div class="form-group">
+                              <textarea
+                                name="add-comments"
+                                id="add-comments"
+                                class="form-control"
+                                placeholder="Type here"
+                              ></textarea>
+                            </div>
+                            <div class="input-action-btns">
+                              <button type="button" class="btn btn-primary">
+                                SUBMIT
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <!-- Add a comment Dropdown End-->
+                      <img
+                        class="link-btn"
+                        src="images/red-down.png"
+                        alt="red-down"
+                      />
+                      <img
+                        class="link-btn"
+                        src="images/green-up.png"
+                        alt="green-up"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-list">
+            <ul>
+              <li class="active">Analysis</li>
+              <li>amenities</li>
+              <li>similar listings</li>
+            </ul>
+          </div>
+          <div class="comment-block">
+            <span class="comment-vertical-line"></span>
+            <div class="comment-content">
+              <strong>Advisor/Agent comments</strong>
+              <p>
+                Wonderful 1960s mid-century home in a stellar location. New
+                flooring in most areas. Subsantial living room with great view
+                and has a open with a large pantry. Features a fireplace and
+                views to the lovely landscape backyard.
+              </p>
+            </div>
+          </div>
+          <!-- comment-block -->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="revenue-block">
+                    <div class="head">
+                      <span class="bar"></span> Rental Analysis
+                    </div>
+                    <div class="amount-range">
+                      $28,500 <span>-</span> $31,500
+                    </div>
+                    <p class="normal-text">Estimated Rent</p>
+                    <div class="d-flex mt-4">
+                      <div class="inner-block">
+                        <div class="head">12.47%</div>
+                        <div class="text">Cap Rate</div>
+                      </div>
+                      <div class="inner-block">
+                        <div class="head">12.47%</div>
+                        <div class="text">Cap Rate</div>
+                      </div>
+                      <div class="inner-block">
+                        <div class="head">12.47%</div>
+                        <div class="text">Cap Rate</div>
+                      </div>
+                    </div>
+                    <div class="speed-metor">
+                      <img src="images/speed-meater.png" alt="speed-meater" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="d-flex justify-content-between calculat-head-section"
+                  >
+                    <div class="expence-list-container">
+                      <div class="heading-section">
+                        <div class="head">Custom Home Calculations</div>
+                        <div class="calc-list">
+                          <span class="active">Custom</span>
+                          <span>Standard</span>
+                        </div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Offer Price:</div>
+                        <div class="text blue-text">$35,000</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Down Payment:</div>
+                        <div class="text blue-text">$7,000</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Amount Financed:</div>
+                        <div class="text blue-text">$7,000</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Monthly Mortgage:</div>
+                        <div class="text blue-text">$53,626</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Upfront Cost:</div>
+                        <div class="text blue-text">$7,000</div>
+                      </div>
+                      <div class="dashed-line"></div>
+                      <div class="list-row">
+                        <div class="head">Estimated Annual Gross Rent:</div>
+                        <div class="text blue-text">25%</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Annual Mortgage Expense:</div>
+                        <div class="text blue-text">25%</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Annual Rental Expense:</div>
+                        <div class="text blue-text">25%</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Management Fee:</div>
+                        <div class="text blue-text">$70</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Maintenance:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Taxes:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Insurance:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Utilities:</div>
+                        <div class="text blue-text">$500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">HOA:</div>
+                        <div class="text blue-text">$1,500</div>
+                      </div>
+                      <div class="list-row sub-list-row">
+                        <div class="head">Other:</div>
+                        <div class="text blue-text">$700</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Total Expenses:</div>
+                        <div class="text blue-text">$53,626</div>
+                      </div>
+                      <div class="list-row">
+                        <div class="head">Annual Cash Flow:</div>
+                        <div class="text blue-text">$6,262</div>
+                      </div>
+                    </div>
+                    <div class="price-container bar-container">
+                      <div class="inner-section">
+                        <div class="btn-section">
+                          <div class="head">customize home</div>
+                          <div class="d-flex">
+                            <button type="button" class="btn reset-btn">
+                              Reset
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                        <div class="big-price">
+                          $315, 000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+                        <div class="big-price mt-2">
+                          $ 63,000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+
+                        <div class="big-price mt-2">
+                          $ 63,000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+
+                        <div class="big-price mt-2">
+                          $ 63,000
+                        </div>
+                        <div class="price-subhead">Listing Price</div>
+                        <div class="slidecontainer">
+                          <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="50"
+                            class="slider"
+                            id="myRange"
+                          />
+                        </div>
+
+                        <div class="management-fee">
+                          <div class="price-subhead">Management Fee</div>
+                          <div class="management-free-content">
+                            <span class="offer">25% </span>
+                            <span class="offer-text">of Estimated Rent</span>
+                          </div>
+                          <span class="offer-bar"></span>
+                        </div>
+                      </div>
+                      <div class="self-check-section">
+                        <label class="custom-radio">
+                          <input type="checkbox" name="profileGMOpt" />
+                          <span class="checkmark"></span>
+                          Self Manage
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="graph-container">
+                <div class="graph-info-section">
+                  <div class="head">
+                    <span class="bar"></span> Projected Profit
+                  </div>
+                  <div class="normal-text">
+                    Rent - Expenses - Mortgage = Profit
+                  </div>
+                  <p class="small-text">
+                    Mortage calculations: $139,900 listing price, 20% down
+                    ($27,980), $111,920 loan amount, 3% interest rate, 30 year
+                    mortgage.
+                  </p>
+                </div>
+                <div class="graph-section">
+                  <img src="images/chat-svg.svg" alt="chat-svg" />
+                </div>
+              </div>
+              <p class="note-text">
+                NOTE: The estimates provided are estimates based on the
+                performance and expenses of similar vacation rental properties.
+                Actual figures could differ materially depending on many factors
+                outside our knowledge or control, such as property condition,
+                existing and future regulations; current and future economic,
+                social, and political trends and conditions; and weather and
+                environmental factors. Expenses are researched to the best of
+                our ability. Additional research will be conducted during the
+                buying process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dashboard-desktop-view -->
+      <!-- desktop view end -->
+      <footer class="footer-section">
+        <div class="footer-inner">
+          <div class="left-link">
+            <a>How We Work</a>
+            <span class="dot"></span>
+            <a>Contact Us</a>
+            <span class="dot"></span>
+            <a>Feedback</a>
+          </div>
+          <div class="copyright-text">
+            &#169; Copyright. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+
+      <div class="add-comment-sticky" id="add-comment-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="add-comment-sticky-wrapper">
+                <div class="left">
+                  <div class="property-section">
+                    <div class="d-flex align-items-end flex-wrap">
+                      <div class="inner-section">
+                        <span class="bar"></span>
+                        <span class="id-text">Rêvedy ID: 3215</span>
+                      </div>
+                    </div>
+                    <div class="address-block">
+                      174 Wibe Boulevard, Ohio, GA 43064
+                    </div>
+                    <p class="amount-box">$139,900</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="add-comment-box">
+                    <!-- Add a comment Dropdown -->
+                    <div class="add-comment-btn custom-dropdown dropdown">
+                      <button
+                        type="button"
+                        class="btn comment-btn"
+                        id="dropdownForm1"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <img src="images/chat.svg" alt="chat" /> Add a comment
+                        <span class="comment-count">1</span>
+                      </button>
+
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownForm1"
+                      >
+                        <img
+                          class="close-dropdown"
+                          src="./images/modal-close.svg"
+                          alt="Close Icon"
+                          width="10"
+                          height="10"
+                        />
+                        <strong
+                          >Let your Revedy Advisor and your Agent know why you
+                          like or dislike the home.</strong
+                        >
+                        <form class="input-box">
+                          <div class="form-group">
+                            <textarea
+                              name="add-comments"
+                              id="add-comments"
+                              class="form-control"
+                              placeholder="Type here"
+                            ></textarea>
+                          </div>
+                          <div class="input-action-btns">
+                            <button type="button" class="btn btn-primary">
+                              SUBMIT
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Add a comment Dropdown End-->
+                    <img
+                      class="link-btn"
+                      src="images/red-down.png"
+                      alt="red-down"
+                    />
+                    <img
+                      class="link-btn"
+                      src="images/green-up.png"
+                      alt="green-up"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Popups -->
+    <!-- <span
+      class="icon-password-hint cursor-pointer"
+      data-toggle="modal"
+      data-target="#searchCriteria"
+      data-backdrop="static"
+      data-keyboard="false"
+    ></span> -->
+
+    <div
+      class="modal fade open-top-side form-modal search-criteria-modal"
+      id="searchCriteria"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="onboarding-container">
+              <div class="right-section w-100">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">
+                    <img
+                      class="logo-img"
+                      src="images/modal-close.svg"
+                      alt="Modal Close icon"
+                      width="10"
+                      height="10"
+                    />
+                  </span>
+                </button>
+                <form class="onboarding-form">
+                  <div class="form-static-content">
+                    <img
+                      class="onboarding-logo"
+                      src="images/onboarding-logo.png"
+                      alt="png"
+                      width="59"
+                      height="34"
+                    />
+                    <p class="search-helper-text">
+                      Our home searches are customized based on each client's
+                      preferences. Modify your search criteria here at any time.
+                    </p>
+                  </div>
+                  <div class="left-form">
+                    <div class="subhead">Location</div>
+
+                    <div class="form-group">
+                      <label>Do you have an area(s) in mind?</label>
+                      <div class="cusotm-select mt-2 w-100">
+                        <select class="select-single" id="step-1">
+                          <option>Select</option>
+                          <option>Yes</option>
+                          <option>No, open to all areas</option>
+                          <option>Some ideas but need help</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="error-container input-field-error">
+                        <span class="icon-information mr-1"></span><span>Mandatory</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>What State(s) are you interested in?</label>
+                      <div class="cusotm-select mt-2 w-100">
+                        <select
+                          class="placeholder-multiple js-states form-control custom-multiple-select"
+                          multiple="multiple"
+                        >
+                          <option>Select All</option>
+                          <option>AL</option>
+                          <option>AK</option>
+                          <option>AZ</option>
+                          <option>AR</option>
+                          <option>CA</option>
+                          <option>CO </option>
+                          <option>CT</option>
+                          <option>DE</option>
+                          <option>FL </option>
+                          <option>GA</option>
+                          <option>HI</option>
+                          <option>ID</option>
+                          <option>IL</option>
+                          <option>IN</option>
+                          <option>IA</option>
+                          <option>KS</option>
+                          <option>KY</option>
+                          <option>LA</option>
+                          <option>ME</option>
+                          <option>MD</option>
+                          <option>MA</option>
+                          <option>MI</option>
+                          <option>MN</option>
+                          <option>MS</option>
+                          <option>MO</option>
+                          <option>MT</option>
+                          <option>NE</option>
+                          <option>MA</option>
+                          <option>MI</option>
+                          <option>MN</option>
+                          <option>MS</option>
+                          <option>NE</option>
+                          <option>NV</option>
+                          <option>NH</option>
+                          <option>NJ</option>
+                          <option>NM</option>
+                          <option>NY</option>
+                          <option>NC </option>
+                          <option>ND</option>
+                          <option>OH</option>
+                          <option>OK</option>
+                          <option>OR</option>
+                          <option>PA</option>
+                          <option>RI</option>
+                          <option>SC</option>
+                          <option>SD</option>
+                          <option>TN</option>
+                          <option>TX</option>
+                          <option>UT</option>
+                          <option>VT</option>
+                          <option>VA</option>
+                          <option>WA</option>
+                          <option>WV</option>
+                          <option>WI</option>
+                          <option>WY</option>
+                        </select>
+                        <!-- <select class="select-single" id="step-2">
+                          <option>Select</option>
+                        </select> -->
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Which area(s) are you interested in?</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search & Select"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label>Zip Code(s) of your choice</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search & Select"
+                      />
+                    </div>
+                  </div>
+                  <!-- left-form -->
+                  <div class="right-form">
+                    <div class="slider-box">
+                      <div class="head">Price Points</div>
+                      <div class="subhead">
+                        Price Range <span class="star">*</span
+                        ><span class="number-text">$100,000-$350,000</span>
+                      </div>
+                      <div class="range-lablel">
+                        <span>Min $100,000</span>
+                        <span>Max $5,000,000</span>
+                      </div>
+                      <div class="slidecontainer">
+                        <input
+                          type="range"
+                          min="1"
+                          max="100"
+                          value="50"
+                          class="slider"
+                          id="myRange"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label
+                        >How are you thinking about evaluating potential
+                        properties?</label
+                      >
+                      <div class="cusotm-select mt-2 w-100">
+                        <select class="select-single" id="step-3">
+                          <option>Select</option>
+                          <option
+                            >I don't know which is why I need Revedy!</option
+                          >
+                          <option
+                            >I just need the rent to cover the mortgage.</option
+                          >
+                          <option>Cap Rate</option>
+                          <option>Cash on Cash</option>
+                          <option
+                            >Annual post expense profit (Cash flow)</option
+                          >
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label
+                        >What is the lowest Cap Rate you are willing to look
+                        at?</label
+                      >
+                      <div class="cusotm-select mt-2 w-100">
+                        <select class="select-single" id="step-4">
+                          <option>Any</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Additional search details</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                  </div>
+                  <!-- right-form -->
+                  <div class="btn-container">
+                    <div class="step-btn text-uppercase">
+                      <span class="bar mr-2"></span> Search Criteria
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary text-uppercase"
+                    >
+                      save
+                    </button>
+                  </div>
+                </form>
+                <!-- onboarding-form -->
+              </div>
+            </div>
+            <!-- onboarding-container -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade form-modal make-offer-modal open-top-side"
+      id="makeOffer"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-body make-a-offer-body">
+            <div class="onboarding-container">
+              <div class="right-section w-100">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">
+                    <img
+                      class="logo-img"
+                      src="images/modal-close.svg"
+                      alt="Modal Close icon"
+                      width="10"
+                      height="10"
+                    />
+                  </span>
+                </button>
+                <form class="onboarding-form">
+                  <div class="form-static-content">
+                    <strong class="offer-title"
+                      >Make an offer for this home</strong
+                    >
+                    <p class="search-helper-text-1">
+                      We have filled in the form for the home you were
+                      previously viewing and using your profile information.
+                      Please complete any missing fields and verify all
+                      pre-filled information prior to submitting the form. Upon
+                      submitting the form, a Preferred Revedy Agent will draft a
+                      offer for your review. If necessary, they will contact you
+                      to discuss the offer process and strategy. Your offer will
+                      not be formally submitted with confirmation of your
+                      agreement to the written offer. As always, do not hesitate
+                      to contact us with any questions.
+                    </p>
+                    <span class="revedy-block">
+                      <span class="bar"></span>
+                      <span class="revedy-id">Rêvedy ID: 3215</span>
+                    </span>
+                    <h2>174 Wibe Boulevard, Ohio, GA 43064</h2>
+                    <strong class="offer-amount">$139,900</strong>
+                    <div class="dotted-border"></div>
+                  </div>
+
+                  <div class="left-form">
+                    <div class="subhead">personal info</div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>First Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Type here"
+                          />
+                        </div>
+                        <!-- form-group -->
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Last Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Type here"
+                          />
+                        </div>
+                        <!-- form-group -->
+                      </div>
+                    </div>
+                    <!-- row -->
+                    <div class="form-group">
+                      <label>Email Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                    <!-- form-group -->
+                    <div class="subhead mt-30">Your Mailing Address</div>
+
+                    <div class="form-group">
+                      <label>Address Line 1</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                    <!-- form-group -->
+                    <div class="form-group">
+                      <label>Address Line 2</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                    <!-- form-group -->
+                    <div class="form-group">
+                      <label>Country</label>
+                      <div class="cusotm-select mt-2 w-100">
+                        <select class="select-single" id="step-5">
+                          <option>Select</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- form-group -->
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>City</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Type here"
+                          />
+                        </div>
+                        <!-- form-group -->
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>State</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Type here"
+                          />
+                        </div>
+                        <!-- form-group -->
+                      </div>
+                    </div>
+                    <!-- row -->
+                    <div class="form-group">
+                      <label>Postal Code</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                    <!-- form-group -->
+
+                    <div class="form-group">
+                      <label>
+                        How will you be financing this purchase?
+                        <span class="label-helper-text"
+                          >(Select all that apply)</span
+                        >
+                      </label>
+                      <div class="checkbox-section d-flex w-100">
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >Cash - no financing needed
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >1031 Exchange
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >I am already pre-approved
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <!-- custom-checkbox -->
+
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >I already have a Lender
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <!-- custom-checkbox -->
+
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >I need help finding the right mortgage solution
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <!-- custom-checkbox -->
+
+                        <div class="custom-checkbox">
+                          <label class="custom-check"
+                            >Purchasing through an LLC
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <!-- custom-checkbox -->
+                      </div>
+                      <!-- checkbox-section -->
+                    </div>
+                    <!-- form-group -->
+                    <div class="subhead">PRE-APPROVAL LETTER</div>
+                    <div class="images-block">
+                      <div class="profile-img">
+                        <!-- <img src="assets/images/default-img.svg" alt="default-img" /> -->
+                      </div>
+                      <div class="file-btn">
+                        Upload
+                        <input type="file" />
+                      </div>
+                    </div>
+                    <!-- images-block -->
+
+                    <div class="form-group">
+                      <label>How much are you putting down?</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                    <!-- form-group -->
+                    <div class="form-group">
+                      <label>What is your interest rate?</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                    <!-- form-group -->
+                    <div class="form-group">
+                      <label
+                        >Please provide full names and email addresses for any
+                        additional people who will be a party to the
+                        offer.</label
+                      >
+                      <textarea
+                        class="form-control textarea-height"
+                        placeholder="Type here"
+                      ></textarea>
+                    </div>
+                    <!-- form-group -->
+                    <div class="form-group">
+                      <label>Add any additional comments or questions</label>
+                      <textarea
+                        class="form-control textarea-height"
+                        placeholder="Type here"
+                      ></textarea>
+                    </div>
+                    <!-- form-group -->
+                  </div>
+                  <!-- left-form -->
+
+                  <div class="right-form">
+                    <div class="subhead">The Offer</div>
+                    <div class="form-group">
+                      <label>What amount would you like to offer?</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Would you like to discuss the offer amount?</label>
+                      <div class="cusotm-select mt-2 w-100">
+                        <select class="select-single" id="step-6">
+                          <option>Select</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label
+                        >How much earnest money are you comfortable with?</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Type here"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label
+                        >Do you have a specific closing date in mind?
+                        <span class="label-helper-text"
+                          >(Two weeks is common for cash, 30-45 days is common
+                          when financing)</span
+                        >
+                      </label>
+                      <div class="input-with-icon">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Type here"
+                        />
+                        <span class="input-icon"
+                          ><span class="icon-date"></span
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="btn-container">
+                      <div class="step-btn text-uppercase">
+                        <span class="bar mr-2"></span> The offer
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary text-uppercase"
+                      >
+                        save
+                      </button>
+                    </div>
+                  </div>
+                  <!-- right-form -->
+                </form>
+                <!-- onboarding-form -->
+              </div>
+            </div>
+            <!-- onboarding-container -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade open-right-side profile-modal-popup"
+      id="accountProfile"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">
+              <img
+                class="logo-img"
+                src="images/modal-close.svg"
+                alt="Modal Close icon"
+                width="10"
+                height="10"
+              />
+            </span>
+          </button>
+          <div class="modal-body">
+            <ul class="list-unstyled">
+              <li class="link-item">
+                <span class="logged-account leggend-text">Account</span>
+                <span class="logged-email d-block"
+                  >janesummers99@yahoo.com</span
+                >
+              </li>
+              <li class="link-item">
+                <a href="edit-my-profile.html" class="link-to">Profile</a>
+              </li>
+              <li class="link-item">
+                <a href="edit-search-criteria.html" class="link-to">Search Criteria</a>
+              </li>
+              <li class="link-item">
+                <a href="edit-purchase-details.html" class="link-to">Purchase Details</a>
+              </li>
+              <li class="link-item">
+                <a href="change-password.html" class="link-to"
+                  >Change Password</a
+                >
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li class="link-item">
+                <span class="review-home leggend-text mb-1">Review Homes</span>
+              </li>
+              <li class="link-item">
+                <a href="#" class="link-to"
+                  ><span>Dashboard</span> <span class="line"></span
+                ></a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="link-to">Featured Homes</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="link-to"
+                  >Available Homes <span class="count">05</span></a
+                >
+              </li>
+              <li class="link-item">
+                <a href="#" class="link-to"
+                  >Liked Homes <span class="count">05</span></a
+                >
+              </li>
+              <li class="link-item">
+                <a href="#" class="link-to">
+                  Disliked Homes <span class="count">10</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="list-unstyled other-page-links">
+              <li class="link-item">
+                <a href="How-We-Work.html" class="link-to">How We Work</a>
+              </li>
+              <li class="link-item">
+                <a href="Contact-Us.html" class="link-to">Contact Us</a>
+              </li>
+              <li class="link-item">
+                <a href="FeedBack.html" class="link-to">Feedback</a>
+              </li>
+              <li class="link-item">
+                <a href="Help-Video.html" class="link-to">Help Video</a>
+              </li>
+              <li class="link-item">
+                <a href="Login.html" class="link-to sign-out">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- select box -->
+    <script src="js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".slider-nav",
+      });
+      $(".slider-nav").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: ".slider-for",
+        dots: false,
+        focusOnSelect: true,
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      $(".placeholder-multiple").select2({
+        placeholder: "Select",
+      });
+    </script>
+  </body>
+</html>

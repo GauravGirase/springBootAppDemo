@@ -1,0 +1,33 @@
+.footer-section{
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  bottom: 0;
+  background-color: #fff;
+  @media screen and (max-width: 992px){
+    position: relative;
+    margin: 0;
+  }
+  .footer-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 992px){
+      flex-wrap: wrap;
+    }
+    .left-link{
+      display: flex;
+      align-items: center;
+      a{
+        font-size: 14px;
+        font-weight: 500;
+        color: #888888;
+      }
+    }
+    .copyright-text{
+      font-size: 14px;
+      font-weight: 500;
+      color: #888888;
+    }
+  }
+}

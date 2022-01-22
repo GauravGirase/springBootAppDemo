@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1064" height="265" viewBox="0 0 1064 265">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path fill="#14616D" d="M0 33L80 33 80 219 0 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116)"/>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="101.7" y="248">Management </tspan> <tspan x="133.748" y="267">Fee </tspan>
+                    </text>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="213.228" y="248">Maintenance</tspan>
+                    </text>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="345.292" y="248">Taxes</tspan>
+                    </text>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="439.34" y="248">Insurance</tspan>
+                    </text>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="675.444" y="248">HOA</tspan>
+                    </text>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="765.12" y="248">Mortgage</tspan>
+                    </text>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="555.492" y="248">Utilities</tspan>
+                    </text>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="980.724" y="248">Projected </tspan> <tspan x="969.428" y="267">Annual Profit</tspan>
+                    </text>
+                    <g fill="#2C2C2C">
+                        <text font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(6)">
+                            <tspan x="1.724" y="248">Projected </tspan> <tspan x="19.14" y="267">Rent</tspan>
+                        </text>
+                        <text font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500" transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(6)">
+                            <tspan x="4.046" y="18">$30,000</tspan>
+                        </text>
+                    </g>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(128 171)">
+                            <tspan x=".148" y="18">$7,500</tspan>
+                        </text>
+                    </g>
+                    <path fill="#EAEAEA" d="M108 205L188 205 188 219 108 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116)"/>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(237 156)">
+                            <tspan x=".403" y="18">$500</tspan>
+                        </text>
+                    </g>
+                    <path fill="#EAEAEA" d="M217 190L297 190 297 219 217 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116)"/>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(347 138)">
+                            <tspan x=".477" y="18">$718</tspan>
+                        </text>
+                    </g>
+                    <path fill="#EAEAEA" d="M325 172L405 172 405 219 325 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116)"/>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(453 161)">
+                            <tspan x=".25" y="18">$504</tspan>
+                        </text>
+                    </g>
+                    <path fill="#EAEAEA" d="M433 190L513 190 513 219 433 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116)"/>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(664 180)">
+                            <tspan x=".341" y="18">$1,500</tspan>
+                        </text>
+                    </g>
+                    <path fill="#EAEAEA" d="M542 181L622 181 622 219 542 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116)"/>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(770 180)">
+                            <tspan x=".397" y="18">$4,320</tspan>
+                        </text>
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(770 180)">
+                            <tspan x="117.281" y="18">$700</tspan>
+                        </text>
+                    </g>
+                    <path fill="#EAEAEA" d="M650 214L730 214 730 219 650 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116) matrix(1 0 0 -1 0 433)"/>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(555 147)">
+                            <tspan x=".419" y="18">$4,856</tspan>
+                        </text>
+                    </g>
+                    <path fill="#EAEAEA" d="M758 214L838 214 838 219 758 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116) matrix(1 0 0 -1 0 433)"/>
+                    <text fill="#2C2C2C" font-family="Barlow-Regular, Barlow" font-size="16" transform="translate(-185 -1867) translate(135 1748) translate(50 116)">
+                        <tspan x="888.18" y="248">Other</tspan>
+                    </text>
+                    <path fill="#EAEAEA" d="M867 214L947 214 947 219 867 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116) matrix(1 0 0 -1 0 433)"/>
+                    <path fill="#68CFD9" d="M975 200L1054 200 1054 219 975 219z" transform="translate(-185 -1867) translate(135 1748) translate(50 116) matrix(1 0 0 -1 0 419)"/>
+                    <g fill="#2C2C2C" font-family="Barlow-SemiBold, Barlow" font-size="18" font-weight="500">
+                        <text transform="translate(-185 -1867) translate(135 1748) translate(50 116) translate(986 166)">
+                            <tspan x=".236" y="18">$10,010</tspan>
+                        </text>
+                    </g>
+                    <path stroke="#2C2C2C" d="M0 219.5L1064 219.5" transform="translate(-185 -1867) translate(135 1748) translate(50 116)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

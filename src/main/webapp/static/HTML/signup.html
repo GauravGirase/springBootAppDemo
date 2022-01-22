@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Login Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- select box -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="login-container">
+      <div class="signup-link">
+        Already a Member? <a href="Login.html">Sign In</a>
+      </div>
+      <div class="login-inner">
+        <div class="left-section">
+          <img class="background-img" src="images/login-BG.png" alt="test" />
+          <img class="logo-img" src="images/logo.png" alt="logo" />
+        </div>
+        <div class="right-section">
+          <h1>
+            Join us<br />
+            to find<br />
+            your<br />
+            dream home.
+          </h1>
+          <div class="normal-text d-flex text-uppercase align-items-center">
+            <span class="bar mr-2"></span>
+            create your revedy account
+          </div>
+          <form class="login-form">
+            <div class="error-container">
+              <span class="icon-information mr-2"></span> Invalid email address.
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="text" class="form-control" placeholder="Type here" />
+            </div>
+            <div class="seprate-bar"></div>
+            <div class="form-group">
+              <label
+                >Create Password
+                <span class="password-hint">(Minimum 8 characters)</span></label
+              >
+              <input type="text" class="form-control" placeholder="Type here" />
+              <span class="hide-link"><a>Hide</a></span>
+            </div>
+            <div class="custom-checkbox">
+              <label class="custom-check">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <span class="checkbox-terms-text"
+                >I agree to Revedy’s
+                <a
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#termsAndServices"
+                  class="cursor-pointer"
+                  data-backdrop="static"
+                  data-keyboard="false"
+                  >Terms of Service</a
+                >
+                &
+                <a
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#privacyPolicy"
+                  class="cursor-pointer"
+                  data-backdrop="static"
+                  data-keyboard="false"
+                  >Privacy Policy</a
+                >.</span
+              >
+            </div>
+            <a
+              href="email-template.html"
+              type="button"
+              class="btn btn-primary w-100 text-uppercase mt-4"
+            >
+              create my account <span class="ml-2 icon-right-arrow"></span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-section">
+      <div class="footer-inner">
+        <div class="left-link">
+          <a>How We Work</a>
+          <span class="dot"></span>
+          <a>Contact Us</a>
+          <span class="dot"></span>
+          <a>Feedback</a>
+        </div>
+        <div class="copyright-text">&#169; Copyright. All Rights Reserved</div>
+      </div>
+    </footer>
+
+    <!-- Modal Terms of Services -->
+    <div
+      class="modal fade modal-static-page"
+      id="termsAndServices"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="termsAndServicesTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <img
+                  class="logo-img"
+                  src="images/modal-close.svg"
+                  alt="Modal Close icon"
+                  width="10"
+                  height="10"
+                />
+              </span>
+            </button>
+            <h5 class="modal-title" id="termsAndServicesTitle">
+              Terms of Service
+            </h5>
+            <strong class="d-block"
+              >We know it’s tempting to skip these Terms of Service, but it’s
+              important to establish what you can expect from us as you use
+              Google services, and what we expect from you.</strong
+            >
+
+            <p>
+              These Terms of Service reflect the way Google’s business works,
+              the laws that apply to our company, and certain things we’ve
+              always believed to be true. As a result, these Terms of Service
+              help define Google’s relationship with you as you interact with
+              our services. For example, these terms include the following topic
+              headings:
+            </p>
+
+            <p>
+              What you can expect from us, which describes how we provide and
+              develop our services
+              <span class="d-block"
+                >What we expect from you, which establishes certain rules for
+                using our services</span
+              >
+              <span class="d-block"
+                >Content in Google services, which describes the intellectual
+                property rights to the content you find in our services —
+                whether that content belongs to you, Google, or others</span
+              >
+              <span class="d-block"
+                >In case of problems or disagreements, which describes other
+                legal rights you have, and what to expect in case someone
+                violates these terms</span
+              >
+              <span class="d-block"
+                >Understanding these terms is important because, by using our
+                services, you’re agreeing to these terms.</span
+              >
+            </p>
+            <p>
+              Besides these terms, we also publish a Privacy Policy. Although
+              it’s not part of these terms, we encourage you to read it to
+              better understand how you can update, manage, export, and delete
+              your information.
+            </p>
+            <strong class="d-block mt-30">Service provider</strong>
+
+            <p>
+              If you’re under the age required to manage your own Google
+              Account, you must have your parent or legal guardian’s permission
+              to use a Google Account. Please have your parent or legal guardian
+              read these terms with you.
+            </p>
+
+            <p>
+              If you’re a parent or legal guardian, and you allow your child to
+              use the services, then these terms apply to you and you’re
+              responsible for your child’s activity on the services.
+            </p>
+
+            <p>
+              Some Google services have additional age requirements as described
+              in their service-specific additional terms and policies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Terms of Services End-->
+
+    <!-- Modal Privacy Policy -->
+    <div
+      class="modal fade modal-static-page"
+      id="privacyPolicy"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="privacyPolicyTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <img
+                  class="logo-img"
+                  src="images/modal-close.svg"
+                  alt="Modal Close icon"
+                  width="10"
+                  height="10"
+                />
+              </span>
+            </button>
+            <h5 class="modal-title" id="privacyPolicyTitle">
+              Privacy Policy
+            </h5>
+            <strong class="d-block"
+              >We know it’s tempting to skip these Terms of Service, but it’s
+              important to establish what you can expect from us as you use
+              Google services, and what we expect from you.</strong
+            >
+
+            <p>
+              These Terms of Service reflect the way Google’s business works,
+              the laws that apply to our company, and certain things we’ve
+              always believed to be true. As a result, these Terms of Service
+              help define Google’s relationship with you as you interact with
+              our services. For example, these terms include the following topic
+              headings:
+            </p>
+
+            <p>
+              What you can expect from us, which describes how we provide and
+              develop our services
+              <span class="d-block"
+                >What we expect from you, which establishes certain rules for
+                using our services</span
+              >
+              <span class="d-block"
+                >Content in Google services, which describes the intellectual
+                property rights to the content you find in our services —
+                whether that content belongs to you, Google, or others</span
+              >
+              <span class="d-block"
+                >In case of problems or disagreements, which describes other
+                legal rights you have, and what to expect in case someone
+                violates these terms</span
+              >
+              <span class="d-block"
+                >Understanding these terms is important because, by using our
+                services, you’re agreeing to these terms.</span
+              >
+            </p>
+            <p>
+              Besides these terms, we also publish a Privacy Policy. Although
+              it’s not part of these terms, we encourage you to read it to
+              better understand how you can update, manage, export, and delete
+              your information.
+            </p>
+            <strong class="d-block mt-30">Privacy Policy provider</strong>
+
+            <p>
+              If you’re under the age required to manage your own Google
+              Account, you must have your parent or legal guardian’s permission
+              to use a Google Account. Please have your parent or legal guardian
+              read these terms with you.
+            </p>
+
+            <p>
+              If you’re a parent or legal guardian, and you allow your child to
+              use the services, then these terms apply to you and you’re
+              responsible for your child’s activity on the services.
+            </p>
+
+            <p>
+              Some Google services have additional age requirements as described
+              in their service-specific additional terms and policies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Privacy Policy End-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- select box -->
+    <script src="js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

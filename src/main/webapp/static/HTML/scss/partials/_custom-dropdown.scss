@@ -1,0 +1,158 @@
+.custom-dropdown{
+	.dropdown-menu{
+		padding: 30px;
+		box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.13);
+		border: 1px solid #dbdbdb;
+		border-radius: 0;
+		right: 0;
+		left: auto !important;
+		margin:0;
+	}
+	.dropdown-toggle::after {
+		display: none;
+	}
+}
+/* Select 2 CSS */
+.select2.select2-container.select2-container--default{
+  width: 100% !important;
+}
+.select2-container{
+  span, div{
+    outline: 0 none !important;
+    box-shadow: none !important;
+  }
+}
+.select2-container--default .select2-selection--single {
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 60px;
+  line-height: 48px;
+  padding: 6px 15px 6px 7px;
+  font-size: 16px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #2c2c2c;
+	line-height: 48px;
+}
+.select2-selection__arrow{
+  height: 60px !important;
+  top: 0 !important;
+  display: flex;
+  align-items: center;
+  &::before{
+    background:url("../images/icon-dropdown.svg") center center/100% 100% no-repeat;
+    content: '';
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 8px;
+    z-index: 1;
+  }
+  b{
+    display: none !important;
+  }
+}
+.form-group{
+  .input-field-error{
+    display: none;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ff4848;
+    align-items: center;
+  }
+  &.error{
+    .select2-container--default .select2-selection--single,
+    .select2-container--default .select2-selection--multiple {
+      border-color: #ff4848 !important;
+    }
+    .input-field-error{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 7px;
+      margin-bottom: 0;
+      padding-left: 0;
+      line-height: 15px;
+    }    
+  }
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #e7eff0;
+  color: #2c2c2c;
+  margin-bottom: 1px;
+}
+.select2-results__option {
+  font-size: 16px;
+  color: #2c2c2c;
+  padding: 8px 15px;
+  margin-bottom: 1px;
+}
+.select2-dropdown {
+  border-radius: 0 !important;
+  border: solid 1px #e7e7e7 !important;
+  background-color: #f5f5f5 !important;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #e7eff0;
+  color: #050505;
+}
+
+
+.input-validation-error{
+  + .select2-container--default .select2-selection--single {
+    border: 1px solid #e7eff0;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 10px;
+}
+.select2-container--default .select2-selection--multiple {
+  background-color: #f1f1f1 !important;
+  border: 1px solid #f1f1f1 !important;
+  border-radius: 0 !important;
+  line-height: normal !important;
+  min-height: 59px !important;
+  display: flex !important;
+  padding: 5px 16px 12px 16px !important;
+}
+.select2-search.select2-search--inline{
+  margin-top: 7px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding: 0 !important;
+}
+.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 0 !important;
+  font-size: 16px !important;
+  min-height: 32px !important;
+}
+.select2-container--default .select2-results>.select2-results__options {
+  border: solid 1px #dcdbdb !important;
+  background-color: #ffffff !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+  border-radius: 0 !important;
+  float: left !important;
+  margin-right: 7px !important;
+  margin-top: 7px !important;
+  padding: 6px 36px 6px 12px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  position: relative !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #38393b !important;
+  margin-right: 0 !important;
+  position: absolute !important;
+  top: 5px !important;
+  right: 12px !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+
